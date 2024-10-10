@@ -1,0 +1,1295 @@
+2024-10-08 17:36:00,895 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 17:40:00,321 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 17:44:00,780 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 17:48:00,190 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 17:52:00,609 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 17:56:01,247 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:00:00,355 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:04:01,122 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:08:00,565 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:12:01,008 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:16:00,400 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:20:00,836 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:24:01,215 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:28:00,610 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:32:00,700 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:36:00,089 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:40:00,515 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:44:00,965 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:48:00,361 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:52:01,090 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 18:56:00,155 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:00:00,574 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:04:01,296 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:08:00,661 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:12:01,033 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:16:00,477 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:20:00,583 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:24:01,048 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:28:01,288 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:32:00,396 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:36:00,866 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:40:00,604 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:44:01,077 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:48:00,459 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:52:00,942 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 19:56:00,584 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")
+2024-10-08 20:00:00,644 ERROR scheduler Exception in Enqueue Events for Site ozerpan
+Traceback (most recent call last):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 106, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 150, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/utils/scheduler.py", line 163, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 846, in get_single_value
+    ).run()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/query_builder/utils.py", line 84, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 213, in sql
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/database.py", line 118, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/mstfrs/Desktop/ozerpan/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/mstfrs/Desktop/ozerpan/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_be61cf5335d3ad96'")

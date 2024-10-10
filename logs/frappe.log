@@ -1,0 +1,141 @@
+2024-10-03 00:44:54,534 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'cmd': 'frappe.utils.change_log.get_versions'}
+2024-10-03 00:44:59,620 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'app_path': 'home'}
+2024-10-03 13:30:44,483 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'doctype': 'project', 'cmd': 'frappe.client.get_count'}
+2024-10-03 13:30:49,536 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'doctype': 'project', 'cmd': 'frappe.client.get_count'}
+2024-10-03 13:31:04,576 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'doctype': 'project', 'cmd': 'frappe.client.get_count'}
+2024-10-05 12:59:46,115 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'job_card': 'PO-JOB00001', 'cmd': 'erpnext.manufacturing.doctype.workstation.workstation.get_raw_materials'}
+2024-10-05 13:08:49,380 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'party': 'Tunç Yapı', 'party_type': 'Customer', 'price_list': 'Standard Selling', 'posting_date': '2024-10-05', 'fetch_payment_terms_template': '1', 'currency': 'TRY', 'company': 'Ozerpan', 'doctype': 'Sales Order', 'cmd': 'erpnext.accounts.party.get_party_details'}
+2024-10-05 13:09:30,674 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Sales Order","name":"new-sales-order-uvrjhnfkih","__islocal":1,"__unsaved":1,"owner":"mustafa@gmail.com","title":"{customer_name}","naming_series":"SAL-ORD-.YYYY.-","order_type":"Sales","transaction_date":"2024-10-05","company":"Ozerpan","skip_delivery_note":0,"currency":"TRY","selling_price_list":"Standard Selling","price_list_currency":"TRY","ignore_pricing_rule":0,"reserve_stock":0,"items":[{"docstatus":0,"doctype":"Sales Order Item","name":"new-sales-order-item-tlbcyqqzwx","__islocal":1,"__unsaved":1,"owner":"mustafa@gmail.com","ensure_delivery_based_on_produced_serial_no":0,"is_stock_item":1,"reserve_stock":1,"stock_uom":"Nos","stock_reserved_qty":0,"margin_type":"","is_free_item":0,"grant_commission":1,"delivered_by_supplier":0,"against_blanket_order":null,"page_break":0,"parent":"new-sales-order-uvrjhnfkih","parentfield":"items","parenttype":"Sales Order","idx":1,"qty":5,"conversion_factor":1,"stock_qty":5,"price_list_rate":0,"base_price_list_rate":0,"margin_rate_or_amount":0,"rate_with_margin":0,"discount_amount":0,"distributed_discount_amount":0,"base_rate_with_margin":0,"rate":2000,"amount":10000,"base_rate":2000,"base_amount":10000,"stock_uom_rate":2000,"net_rate":2000,"net_amount":10000,"base_net_rate":2000,"base_net_amount":10000,"billed_amt":0,"valuation_rate":0,"gross_profit":0,"weight_per_unit":0,"total_weight":0,"blanket_order_rate":0,"projected_qty":0,"actual_qty":0,"ordered_qty":0,"planned_qty":0,"production_plan_qty":0,"work_order_qty":0,"delivered_qty":0,"produced_qty":0,"returned_qty":0,"picked_qty":0,"item_code":"Pencere","weight_uom":null,"barcode":null,"pricing_rules":"","item_name":"Pencere","description":"Pencere","image":"","warehouse":"Stores - O","income_account":null,"expense_account":null,"discount_account":null,"provisional_expense_account":null,"cost_center":"Main - O","has_serial_no":0,"has_batch_no":0,"batch_no":null,"uom":"Nos","min_order_qty":"","discount_percentage":0,"update_stock":0,"is_fixed_asset":0,"last_purchase_rate":0,"transaction_date":"2024-10-05","bom_no":"BOM-Pencere-001","item_group":"Products","brand":null,"manufacturer":null,"manufacturer_part_no":null,"item_tax_rate":"{}","customer_item_code":null,"reserved_qty":0,"has_margin":false,"free_item_data":[],"child_docname":"new-sales-order-item-tlbcyqqzwx","delivery_date":"2024-11-01"}],"taxes":[],"disable_rounded_total":0,"apply_discount_on":"Grand Total","packed_items":[],"pricing_rules":[],"payment_schedule":[],"status":"Draft","delivery_status":"Not Delivered","billing_status":"Not Billed","advance_payment_status":"Not Requested","sales_team":[],"group_same_items":0,"language":"en","is_internal_customer":0,"party_account_currency":"TRY","advance_paid":0,"conversion_rate":1,"plc_conversion_rate":1,"company_address":"","company_address_display":"","base_net_total":10000,"net_total":10000,"base_total":10000,"total":10000,"total_qty":5,"rounding_adjustment":0,"grand_total":10000,"base_grand_total":10000,"total_taxes_and_charges":0,"base_total_taxes_and_charges":0,"base_rounding_adjustment":0,"rounded_total":10000,"base_rounded_total":10000,"in_words":"","base_in_words":"","base_discount_amount":0,"amount_eligible_for_commission":10000,"total_commission":null,"tax_id":null,"customer_name":"Tunç Yapı","represents_company":null,"customer":"Tunç Yapı","total_net_weight":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-10-05 13:10:29,233 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Address","name":"new-address-uisijurqui","__islocal":1,"__unsaved":1,"owner":"mustafa@gmail.com","address_type":"Billing","country":"Türkiye","is_primary_address":0,"is_shipping_address":0,"disabled":0,"links":[{"docstatus":0,"doctype":"Dynamic Link","name":"new-dynamic-link-ixhhjdnuom","__islocal":1,"__unsaved":1,"owner":"mustafa@gmail.com","parent":"new-address-uisijurqui","parentfield":"links","parenttype":"Address","idx":1,"link_doctype":"Customer","link_name":"Tunç Yapı"}],"address_title":"Şube Adresi","address_line1":"Atatürk Mah","city":"Samsun"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-10-05 13:10:40,148 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Address","name":"new-address-uisijurqui","__islocal":1,"__unsaved":1,"owner":"mustafa@gmail.com","address_type":"Billing","country":"Türkiye","is_primary_address":1,"is_shipping_address":0,"disabled":0,"links":[{"docstatus":0,"doctype":"Dynamic Link","name":"new-dynamic-link-ixhhjdnuom","__islocal":1,"__unsaved":1,"owner":"mustafa@gmail.com","parent":"new-address-uisijurqui","parentfield":"links","parenttype":"Address","idx":1,"link_doctype":"Customer","link_name":"Tunç Yapı"}],"address_title":"Şube Adresi","address_line1":"Atatürk Mah","city":"Samsun"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-10-05 13:11:17,356 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Sales Order","name":"new-sales-order-uvrjhnfkih","__islocal":1,"__unsaved":1,"owner":"mustafa@gmail.com","title":"{customer_name}","naming_series":"SAL-ORD-.YYYY.-","order_type":"Sales","transaction_date":"2024-10-05","company":"Ozerpan","skip_delivery_note":0,"currency":"TRY","selling_price_list":"Standard Selling","price_list_currency":"TRY","ignore_pricing_rule":0,"reserve_stock":0,"items":[{"docstatus":0,"doctype":"Sales Order Item","name":"new-sales-order-item-tlbcyqqzwx","__islocal":1,"__unsaved":1,"owner":"mustafa@gmail.com","ensure_delivery_based_on_produced_serial_no":0,"is_stock_item":1,"reserve_stock":1,"stock_uom":"Nos","stock_reserved_qty":0,"margin_type":"","is_free_item":0,"grant_commission":1,"delivered_by_supplier":0,"against_blanket_order":null,"page_break":0,"parent":"new-sales-order-uvrjhnfkih","parentfield":"items","parenttype":"Sales Order","idx":1,"qty":5,"conversion_factor":1,"stock_qty":5,"price_list_rate":0,"base_price_list_rate":0,"margin_rate_or_amount":0,"rate_with_margin":0,"discount_amount":0,"distributed_discount_amount":0,"base_rate_with_margin":0,"rate":2000,"amount":10000,"base_rate":2000,"base_amount":10000,"stock_uom_rate":2000,"net_rate":2000,"net_amount":10000,"base_net_rate":2000,"base_net_amount":10000,"billed_amt":0,"valuation_rate":0,"gross_profit":0,"weight_per_unit":0,"total_weight":0,"blanket_order_rate":0,"projected_qty":0,"actual_qty":0,"ordered_qty":0,"planned_qty":0,"production_plan_qty":0,"work_order_qty":0,"delivered_qty":0,"produced_qty":0,"returned_qty":0,"picked_qty":0,"item_code":"Pencere","weight_uom":null,"barcode":null,"pricing_rules":"","item_name":"Pencere","description":"Pencere","image":"","warehouse":"Stores - O","income_account":null,"expense_account":null,"discount_account":null,"provisional_expense_account":null,"cost_center":"Main - O","has_serial_no":0,"has_batch_no":0,"batch_no":null,"uom":"Nos","min_order_qty":"","discount_percentage":0,"update_stock":0,"is_fixed_asset":0,"last_purchase_rate":0,"transaction_date":"2024-10-05","bom_no":"BOM-Pencere-001","item_group":"Products","brand":null,"manufacturer":null,"manufacturer_part_no":null,"item_tax_rate":"{}","customer_item_code":null,"reserved_qty":0,"has_margin":false,"free_item_data":[],"child_docname":"new-sales-order-item-tlbcyqqzwx","delivery_date":"2024-11-01"}],"taxes":[],"disable_rounded_total":0,"apply_discount_on":"Grand Total","packed_items":[],"pricing_rules":[],"payment_schedule":[],"status":"Draft","delivery_status":"Not Delivered","billing_status":"Not Billed","advance_payment_status":"Not Requested","sales_team":[],"group_same_items":0,"language":"en","is_internal_customer":0,"party_account_currency":"TRY","advance_paid":0,"conversion_rate":1,"plc_conversion_rate":1,"company_address":"","company_address_display":"","base_net_total":10000,"net_total":10000,"base_total":10000,"total":10000,"total_qty":5,"rounding_adjustment":0,"grand_total":10000,"base_grand_total":10000,"total_taxes_and_charges":0,"base_total_taxes_and_charges":0,"base_rounding_adjustment":0,"rounded_total":10000,"base_rounded_total":10000,"in_words":"","base_in_words":"","base_discount_amount":0,"amount_eligible_for_commission":10000,"total_commission":null,"tax_id":null,"customer_name":"Tunç Yapı","represents_company":null,"customer":"Tunç Yapı","total_net_weight":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-10-05 23:09:46,234 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'status': 'Work In Progress', 'started_time': '2024-10-05T20:09:45.787Z'}
+2024-10-06 21:27:56,387 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'fields': "['name','tabJob Car Time Log'.employee]"}
+2024-10-06 21:28:12,443 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'fields': "['name']"}
+2024-10-06 21:28:13,103 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'fields': "['name']"}
+2024-10-06 21:29:44,195 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'fields': ['name', None], 'order_by': '', 'limit': '20', 'limit_start': '0', 'as_dict': True, 'limit_page_length': '20'}
+2024-10-06 21:29:44,477 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'fields': ['name', None], 'order_by': '', 'limit': '20', 'limit_start': '0', 'as_dict': True, 'limit_page_length': '20'}
+2024-10-06 21:29:49,719 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'fields': ['name', None], 'order_by': '', 'limit': '20', 'limit_start': '0', 'as_dict': True, 'limit_page_length': '20'}
+2024-10-06 21:30:15,656 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'fields': ['name', None], 'order_by': '', 'limit': '20', 'limit_start': '0', 'as_dict': True, 'limit_page_length': '20'}
+2024-10-07 10:53:34,355 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'job_card': 'PO-JOB00002', 'from_time': '2024-10-07T07:49:34.850Z', 'to_time': None, 'employee': 'HR-EMP-00001', 'completed_qty': 0}
+2024-10-07 10:54:41,849 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'job_card': 'PO-JOB00002', 'to_time': '2024-10-07T09:49:34.850Z', 'employee': 'HR-EMP-00001', 'completed_qty': 0}
+2024-10-07 10:54:46,517 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'job_card': 'PO-JOB00002', 'to_time': '2024-10-07T09:49:34.850Z', 'employee': 'HR-EMP-00001', 'completed_qty': 0}
+2024-10-07 10:58:21,698 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {}
+2024-10-07 11:00:06,219 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {}
+2024-10-07 12:32:34,942 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'to_time': '2024-10-07T09:32:34.901Z'}
+2024-10-07 12:34:11,304 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'to_time': '2024-10-07T09:34:11.264Z'}
+2024-10-07 12:34:29,847 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'to_time': '2024-10-07T09:34:29.795Z'}
+2024-10-07 13:28:18,340 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'to_time': '2024-10-07T10:28:18.280Z'}
+2024-10-07 13:28:27,607 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'to_time': '2024-10-07T10:28:27.562Z'}
+2024-10-07 13:50:12,399 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'to_time': '2024-10-07T10:50:12.332Z'}
+2024-10-07 13:57:15,557 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'to_time': '07-10-2024 13:57:15'}
+2024-10-08 10:02:09,530 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'job_card': 'PO-JOB00002', 'from_time': '2024-10-07 11:59:34', 'employee': 'HR-EMP-00001', 'completed_qty': 0, 'parent': 'PO-JOB00002', 'parenttype': 'Job Card', 'parentfield': 'time_logs'}
+2024-10-08 10:02:18,522 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'job_card': 'PO-JOB00002', 'from_time': '2024-10-07 11:59:34', 'employee': 'HR-EMP-00001', 'completed_qty': 0, 'parent': 'PO-JOB00002', 'parenttype': 'Job Card', 'parentfield': 'time_logs', 'limit_page_length': 20}
+2024-10-08 10:02:34,334 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'job_card': 'PO-JOB00002', 'from_time': '2024-10-07 11:59:34', 'employee': 'HR-EMP-00001', 'completed_qty': 0, 'parent': 'PO-JOB00002', 'parenttype': 'Job Card', 'parentfield': 'time_logs', 'limit_page_length': 20}
+2024-10-08 13:49:24,495 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'fields': '["*"', 'filters': '[["workstation", "=", "Montaj"]]', 'limit': '20', 'limit_start': '0'}
+2024-10-08 15:39:35,402 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'employee': {'name': 'HR-EMP-00001', 'owner': 'Administrator', 'creation': '2024-10-05 08:11:29.659013', 'modified': '2024-10-07 19:56:08.973402', 'modified_by': 'mustafa@gmail.com', 'docstatus': 0, 'idx': 477, 'employee': 'HR-EMP-00001', 'naming_series': 'HR-EMP-', 'first_name': 'Mustafa', 'last_name': 'ÖRS', 'employee_name': 'Mustafa ÖRS', 'gender': 'Male', 'date_of_birth': '1987-08-01', 'date_of_joining': '2024-10-01', 'status': 'Active', 'user_id': 'mustafaors@gmail.com', 'create_user_permission': 1, 'company': 'Ozerpan', 'custom_workstation': 'Montaj', 'notice_number_of_days': 0, 'date_of_retirement': '2047-08-01', 'prefered_contact_email': '', 'prefered_email': 'mustafaors@gmail.com', 'unsubscribed': 0, 'current_accommodation_type': '', 'permanent_accommodation_type': '', 'ctc': 0, 'salary_currency': 'TRY', 'salary_mode': '', 'marital_status': '', 'blood_group': '', 'leave_encashed': '', 'lft': 1, 'rgt': 2, 'old_parent': '', 'doctype': 'Employee', 'internal_work_history': [], 'education': [], 'external_work_history': []}}
+2024-10-08 19:30:45,747 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'filters': '[["user_id","=","${currentUser}"]]`', 'limit_page_length': 20}
+2024-10-08 19:31:08,667 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'filters': '[["user_id","=","mustafaors@gmail.com"]]`', 'limit_page_length': 20}
+2024-10-08 19:31:09,595 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'filters': '[["user_id","=","mustafaors@gmail.com"]]`', 'limit_page_length': 20}
+2024-10-08 19:31:29,015 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'filters': '[["user_id","=","ahmetors@gmail.com"]]`', 'limit_page_length': 20}
+2024-10-08 19:32:00,370 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'filters': '[["user_id","=","ahmetors@gmail.com"]]`', 'limit_page_length': 20}
+2024-10-08 19:32:01,098 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'filters': '[["user_id","=","ahmetors@gmail.com"]]`', 'limit_page_length': 20}
+2024-10-08 19:32:01,643 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'filters': '[["user_id","=","ahmetors@gmail.com"]]`', 'limit_page_length': 20}
+2024-10-08 19:32:06,045 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'filters': '[["user_id","=","ahmetors@gmail.com"]]`', 'limit_page_length': 20}
+2024-10-08 19:53:26,607 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'doctype': 'User', 'cmd': 'frappe.client.get_value'}
+2024-10-08 19:53:45,331 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'doctype': 'Job Card', 'cmd': 'frappe.client.get_value'}
+2024-10-08 22:59:15,718 ERROR frappe New Exception collected in error log
+Site: ozerpan.test
+Form Dict: {'cmd': 'frappe.core.doctype.user.user.generate_keys'}

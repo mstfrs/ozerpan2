@@ -1,0 +1,323 @@
+2024-10-02 23:56:30,993 DEBUG cd ozerpan && python3 -m venv env
+2024-10-02 23:56:36,001 DEBUG cd ozerpan && /home/mstfrs/Desktop/ozerpan/env/bin/python -m pip install --quiet --upgrade pip
+2024-10-02 23:56:39,737 DEBUG cd ozerpan && /home/mstfrs/Desktop/ozerpan/env/bin/python -m pip install --quiet wheel
+2024-10-02 23:56:42,863 LOG Getting frappe
+2024-10-02 23:56:42,863 DEBUG cd ozerpan/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-10-02 23:56:51,749 LOG Installing frappe
+2024-10-02 23:56:51,750 DEBUG cd /home/mstfrs/Desktop/ozerpan && /home/mstfrs/Desktop/ozerpan/env/bin/python -m pip install --quiet --upgrade -e /home/mstfrs/Desktop/ozerpan/apps/frappe 
+2024-10-02 23:58:30,477 DEBUG cd /home/mstfrs/Desktop/ozerpan/apps/frappe && yarn install --check-files
+2024-10-02 23:59:46,871 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-02 23:59:46,897 DEBUG cd ozerpan && bench build
+2024-10-02 23:59:47,036 INFO /usr/local/bin/bench build
+2024-10-03 00:01:25,436 LOG setting up backups
+2024-10-03 00:01:26,012 LOG backups were set up
+2024-10-03 00:01:26,013 INFO Bench ozerpan initialized
+2024-10-03 00:01:26,601 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:01:44,472 INFO /usr/local/bin/bench get-app erpnext
+2024-10-03 00:01:45,187 LOG Getting erpnext
+2024-10-03 00:01:45,187 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2024-10-03 00:01:55,002 LOG Installing erpnext
+2024-10-03 00:01:55,002 DEBUG cd /home/mstfrs/Desktop/ozerpan && /home/mstfrs/Desktop/ozerpan/env/bin/python -m pip install --quiet --upgrade -e /home/mstfrs/Desktop/ozerpan/apps/erpnext 
+2024-10-03 00:02:13,676 DEBUG cd /home/mstfrs/Desktop/ozerpan/apps/erpnext && yarn install --check-files
+2024-10-03 00:02:14,444 DEBUG bench build --app erpnext
+2024-10-03 00:02:14,564 INFO /usr/local/bin/bench build --app erpnext
+2024-10-03 00:02:31,375 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-03 00:02:31,596 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:03:10,558 INFO /usr/local/bin/bench get-app hrms
+2024-10-03 00:03:11,114 LOG Getting hrms
+2024-10-03 00:03:11,114 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2024-10-03 00:03:13,600 LOG Installing hrms
+2024-10-03 00:03:13,600 DEBUG cd /home/mstfrs/Desktop/ozerpan && /home/mstfrs/Desktop/ozerpan/env/bin/python -m pip install --quiet --upgrade -e /home/mstfrs/Desktop/ozerpan/apps/hrms 
+2024-10-03 00:03:17,223 DEBUG cd /home/mstfrs/Desktop/ozerpan/apps/hrms && yarn install --check-files
+2024-10-03 00:05:50,506 DEBUG bench build --app hrms
+2024-10-03 00:05:50,661 INFO /usr/local/bin/bench build --app hrms
+2024-10-03 00:06:38,970 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-03 00:06:39,214 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:06:58,225 INFO /usr/local/bin/bench new-site ozerpan.local
+2024-10-03 00:07:24,100 INFO /usr/local/bin/bench new-site ozerpan.local
+2024-10-03 00:07:46,916 INFO /usr/local/bin/bench new-site ozerpan
+2024-10-03 00:12:14,281 INFO /usr/local/bin/bench use ozerpan
+2024-10-03 00:12:48,631 INFO /usr/local/bin/bench start
+2024-10-03 00:12:51,125 INFO /usr/local/bin/bench serve --port 8001
+2024-10-03 00:12:51,141 INFO /usr/local/bin/bench worker
+2024-10-03 00:12:51,249 INFO /usr/local/bin/bench watch
+2024-10-03 00:12:51,250 INFO /usr/local/bin/bench schedule
+2024-10-03 00:15:15,345 INFO /usr/local/bin/bench drop-site ozerpan
+2024-10-03 00:19:14,414 INFO /usr/local/bin/bench new-site ozerpan.test
+2024-10-03 00:22:37,399 INFO /usr/local/bin/bench install-app erpnext hrms
+2024-10-03 00:23:25,948 INFO /usr/local/bin/bench use ozerpan.test
+2024-10-03 00:23:28,358 INFO /usr/local/bin/bench install-app erpnext hrms
+2024-10-03 00:31:48,526 INFO /usr/local/bin/bench install-app hrms
+2024-10-03 00:31:55,358 INFO /usr/local/bin/bench start
+2024-10-03 00:31:57,064 INFO /usr/local/bin/bench watch
+2024-10-03 00:31:57,145 INFO /usr/local/bin/bench serve --port 8001
+2024-10-03 00:31:57,149 INFO /usr/local/bin/bench worker
+2024-10-03 00:31:57,250 INFO /usr/local/bin/bench schedule
+2024-10-03 00:34:20,970 INFO /usr/local/bin/bench new-app ozerpan
+2024-10-03 00:34:20,990 LOG creating new app ozerpan
+2024-10-03 00:34:39,215 WARNING /usr/local/bin/bench new-app ozerpan executed with exit code 1
+2024-10-03 00:34:39,657 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:34:43,134 INFO /usr/local/bin/bench new-app ozerpan
+2024-10-03 00:34:43,143 LOG creating new app ozerpan
+2024-10-03 00:36:00,028 LOG Installing ozerpan
+2024-10-03 00:36:00,030 DEBUG cd /home/mstfrs/Desktop/ozerpan && /home/mstfrs/Desktop/ozerpan/env/bin/python -m pip install --quiet --upgrade -e /home/mstfrs/Desktop/ozerpan/apps/ozerpan 
+2024-10-03 00:36:04,105 DEBUG bench build --app ozerpan
+2024-10-03 00:36:04,295 INFO /usr/local/bin/bench build --app ozerpan
+2024-10-03 00:36:06,913 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-03 00:36:07,365 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:38:08,579 INFO /usr/local/bin/bench clear-cache
+2024-10-03 00:38:09,797 INFO /usr/local/bin/bench clear-website-cache
+2024-10-03 00:38:17,079 INFO /usr/local/bin/bench build
+2024-10-03 00:41:19,316 INFO /usr/local/bin/bench --site ozerpan.test remove-app hrms
+2024-10-03 00:41:19,428 WARNING /usr/local/bin/bench --site ozerpan.test remove-app hrms executed with exit code 2
+2024-10-03 00:41:20,087 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:41:28,980 INFO /usr/local/bin/bench --site ozerpan.test remove-app hr
+2024-10-03 00:41:28,983 WARNING /usr/local/bin/bench --site ozerpan.test remove-app hr executed with exit code 2
+2024-10-03 00:41:29,240 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:41:42,763 INFO /usr/local/bin/bench --site ozerpan remove-app hr
+2024-10-03 00:41:42,766 WARNING /usr/local/bin/bench --site ozerpan remove-app hr executed with exit code 2
+2024-10-03 00:41:43,087 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:42:05,093 INFO /usr/local/bin/bench --site ozerpan.test remove-app hrms
+2024-10-03 00:42:05,097 WARNING /usr/local/bin/bench --site ozerpan.test remove-app hrms executed with exit code 2
+2024-10-03 00:42:05,382 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:42:12,894 INFO /usr/local/bin/bench remove-app hrms
+2024-10-03 00:42:13,047 INFO /usr/local/bin/bench --site all list-apps --format json
+2024-10-03 00:42:15,060 INFO /usr/local/bin/bench --site ozerpan list-apps
+2024-10-03 00:42:15,715 WARNING /usr/local/bin/bench remove-app hrms executed with exit code 1
+2024-10-03 00:42:16,077 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:42:33,244 INFO /usr/local/bin/bench --site ozerpan remove-app hrms
+2024-10-03 00:42:33,248 WARNING /usr/local/bin/bench --site ozerpan remove-app hrms executed with exit code 2
+2024-10-03 00:42:33,554 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:44:42,598 INFO /usr/local/bin/bench install-app ozerpan
+2024-10-03 00:45:06,923 INFO /usr/local/bin/bench start
+2024-10-03 00:45:09,399 INFO /usr/local/bin/bench serve --port 8001
+2024-10-03 00:45:09,458 INFO /usr/local/bin/bench schedule
+2024-10-03 00:45:09,505 INFO /usr/local/bin/bench worker
+2024-10-03 00:45:09,518 INFO /usr/local/bin/bench watch
+2024-10-03 00:48:35,297 INFO /usr/local/bin/bench get-app https://github.com/NagariaHussain/doppio
+2024-10-03 00:48:35,307 LOG Getting doppio
+2024-10-03 00:48:35,307 DEBUG cd ./apps && git clone https://github.com/NagariaHussain/doppio  --depth 1 --origin upstream
+2024-10-03 00:48:37,531 LOG Installing doppio
+2024-10-03 00:48:37,531 DEBUG cd /home/mstfrs/Desktop/ozerpan && /home/mstfrs/Desktop/ozerpan/env/bin/python -m pip install --quiet --upgrade -e /home/mstfrs/Desktop/ozerpan/apps/doppio 
+2024-10-03 00:48:42,827 DEBUG cd /home/mstfrs/Desktop/ozerpan/apps/doppio && yarn install --check-files
+2024-10-03 00:48:48,976 DEBUG bench build --app doppio
+2024-10-03 00:48:49,154 INFO /usr/local/bin/bench build --app doppio
+2024-10-03 00:48:52,016 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-03 00:48:52,426 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-03 00:49:06,864 INFO /usr/local/bin/bench add-spa
+2024-10-03 00:55:00,960 INFO /usr/local/bin/bench build
+2024-10-03 01:07:58,688 INFO /usr/local/bin/bench build
+2024-10-03 01:10:21,532 INFO /usr/local/bin/bench start
+2024-10-03 01:10:23,607 INFO /usr/local/bin/bench schedule
+2024-10-03 01:10:23,623 INFO /usr/local/bin/bench worker
+2024-10-03 01:10:23,624 INFO /usr/local/bin/bench watch
+2024-10-03 01:10:23,630 INFO /usr/local/bin/bench serve --port 8001
+2024-10-03 01:23:07,995 INFO /usr/local/bin/bench start
+2024-10-03 01:23:08,563 INFO /usr/local/bin/bench schedule
+2024-10-03 01:23:08,612 INFO /usr/local/bin/bench serve --port 8001
+2024-10-03 01:23:08,639 INFO /usr/local/bin/bench worker
+2024-10-03 01:23:08,654 INFO /usr/local/bin/bench watch
+2024-10-03 01:31:45,298 INFO /usr/local/bin/bench start
+2024-10-03 01:31:46,327 INFO /usr/local/bin/bench serve --port 8001
+2024-10-03 01:31:46,363 INFO /usr/local/bin/bench watch
+2024-10-03 01:31:46,369 INFO /usr/local/bin/bench worker
+2024-10-03 01:31:46,488 INFO /usr/local/bin/bench schedule
+2024-10-03 06:00:05,032 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-03 10:09:20,781 INFO /usr/local/bin/bench build --app ozerpan
+2024-10-03 10:14:12,874 INFO /usr/local/bin/bench build --app ozerpan
+2024-10-03 10:15:59,993 INFO /usr/local/bin/bench build --app ozerpan
+2024-10-03 10:28:42,094 INFO /usr/local/bin/bench start
+2024-10-03 10:28:45,174 INFO /usr/local/bin/bench worker
+2024-10-03 10:28:45,174 INFO /usr/local/bin/bench serve --port 8001
+2024-10-03 10:28:45,174 INFO /usr/local/bin/bench watch
+2024-10-03 10:28:45,174 INFO /usr/local/bin/bench schedule
+2024-10-03 12:00:02,100 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-03 18:00:03,184 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-04 00:00:05,991 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-04 06:00:02,861 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-04 12:00:04,405 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-04 18:00:04,692 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-05 08:05:45,321 INFO /usr/local/bin/bench start
+2024-10-05 08:06:06,668 INFO /usr/local/bin/bench worker
+2024-10-05 08:06:06,668 INFO /usr/local/bin/bench watch
+2024-10-05 08:06:06,669 INFO /usr/local/bin/bench schedule
+2024-10-05 08:06:06,669 INFO /usr/local/bin/bench serve --port 8001
+2024-10-05 12:00:02,273 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-05 18:00:01,828 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-06 00:00:13,950 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-06 06:00:04,220 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-06 12:00:03,446 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-06 12:51:34,338 INFO /usr/local/bin/bench start
+2024-10-06 12:51:36,430 INFO /usr/local/bin/bench watch
+2024-10-06 12:51:36,430 INFO /usr/local/bin/bench serve --port 8001
+2024-10-06 12:51:36,430 INFO /usr/local/bin/bench worker
+2024-10-06 12:51:36,430 INFO /usr/local/bin/bench schedule
+2024-10-06 18:00:07,985 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-06 23:21:08,937 INFO /usr/local/bin/bench start
+2024-10-06 23:21:12,031 INFO /usr/local/bin/bench worker
+2024-10-06 23:21:12,031 INFO /usr/local/bin/bench watch
+2024-10-06 23:21:12,031 INFO /usr/local/bin/bench serve --port 8001
+2024-10-06 23:21:12,031 INFO /usr/local/bin/bench schedule
+2024-10-06 23:47:22,036 INFO /usr/local/bin/bench start
+2024-10-06 23:47:24,506 INFO /usr/local/bin/bench watch
+2024-10-06 23:47:24,506 INFO /usr/local/bin/bench serve --port 8001
+2024-10-06 23:47:24,506 INFO /usr/local/bin/bench worker
+2024-10-06 23:47:24,506 INFO /usr/local/bin/bench schedule
+2024-10-07 00:00:02,302 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-07 06:00:05,110 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-07 10:29:49,768 INFO /usr/local/bin/bench start
+2024-10-07 10:29:55,185 INFO /usr/local/bin/bench serve --port 8001
+2024-10-07 10:29:55,185 INFO /usr/local/bin/bench worker
+2024-10-07 10:29:55,185 INFO /usr/local/bin/bench schedule
+2024-10-07 10:29:55,186 INFO /usr/local/bin/bench watch
+2024-10-07 12:00:03,726 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-07 14:11:07,170 INFO /usr/local/bin/bench start
+2024-10-07 14:11:09,993 INFO /usr/local/bin/bench serve --port 8001
+2024-10-07 14:11:09,993 INFO /usr/local/bin/bench watch
+2024-10-07 14:11:09,993 INFO /usr/local/bin/bench worker
+2024-10-07 14:11:09,993 INFO /usr/local/bin/bench schedule
+2024-10-07 18:00:02,926 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-07 21:54:57,227 INFO /usr/local/bin/bench start
+2024-10-07 21:55:07,687 INFO /usr/local/bin/bench worker
+2024-10-07 21:55:07,690 INFO /usr/local/bin/bench schedule
+2024-10-07 21:55:07,691 INFO /usr/local/bin/bench watch
+2024-10-07 21:55:07,693 INFO /usr/local/bin/bench serve --port 8001
+2024-10-07 22:00:29,461 INFO /usr/local/bin/bench start
+2024-10-07 22:00:40,887 INFO /usr/local/bin/bench schedule
+2024-10-07 22:00:40,889 INFO /usr/local/bin/bench serve --port 8001
+2024-10-07 22:00:40,890 INFO /usr/local/bin/bench worker
+2024-10-07 22:00:40,891 INFO /usr/local/bin/bench watch
+2024-10-08 00:00:08,027 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-08 06:00:01,766 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-08 06:53:39,837 INFO /usr/local/bin/bench start
+2024-10-08 06:53:43,138 INFO /usr/local/bin/bench watch
+2024-10-08 06:53:43,138 INFO /usr/local/bin/bench worker
+2024-10-08 06:53:43,138 INFO /usr/local/bin/bench serve --port 8001
+2024-10-08 06:53:43,138 INFO /usr/local/bin/bench schedule
+2024-10-08 09:48:47,481 INFO /usr/local/bin/bench start
+2024-10-08 09:48:50,595 INFO /usr/local/bin/bench schedule
+2024-10-08 09:48:50,595 INFO /usr/local/bin/bench serve --port 8001
+2024-10-08 09:48:50,595 INFO /usr/local/bin/bench worker
+2024-10-08 09:48:50,595 INFO /usr/local/bin/bench watch
+2024-10-08 10:34:01,722 INFO /usr/local/bin/bench start
+2024-10-08 10:34:05,879 INFO /usr/local/bin/bench worker
+2024-10-08 10:34:05,900 INFO /usr/local/bin/bench schedule
+2024-10-08 10:34:05,936 INFO /usr/local/bin/bench watch
+2024-10-08 10:34:05,937 INFO /usr/local/bin/bench serve --port 8001
+2024-10-08 10:34:34,155 INFO /usr/local/bin/bench start
+2024-10-08 10:34:53,809 INFO /usr/local/bin/bench restart
+2024-10-08 10:34:53,818 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-08 10:34:54,719 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-08 10:35:06,829 INFO /usr/local/bin/bench restart
+2024-10-08 10:35:06,839 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-08 10:35:07,123 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-08 10:38:25,383 INFO /usr/local/bin/bench start
+2024-10-08 10:38:26,081 INFO /usr/local/bin/bench worker
+2024-10-08 10:38:26,146 INFO /usr/local/bin/bench schedule
+2024-10-08 10:38:26,266 INFO /usr/local/bin/bench serve --port 8001
+2024-10-08 10:38:26,281 INFO /usr/local/bin/bench watch
+2024-10-08 10:40:06,934 INFO /usr/local/bin/bench migrate
+2024-10-08 10:40:36,885 INFO /usr/local/bin/bench start
+2024-10-08 10:40:37,285 INFO /usr/local/bin/bench worker
+2024-10-08 10:40:37,464 INFO /usr/local/bin/bench watch
+2024-10-08 10:40:37,473 INFO /usr/local/bin/bench serve --port 8001
+2024-10-08 10:40:37,508 INFO /usr/local/bin/bench schedule
+2024-10-08 10:42:47,876 INFO /usr/local/bin/bench build
+2024-10-08 10:51:26,275 INFO /usr/local/bin/bench restart
+2024-10-08 10:51:26,359 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-08 10:51:27,222 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-08 10:53:26,926 INFO /usr/local/bin/bench restart
+2024-10-08 10:53:27,406 DEBUG cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe:
+2024-10-08 10:53:27,636 WARNING cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe: executed with exit code 2
+2024-10-08 10:53:27,637 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-10-08 10:53:28,000 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-10-08 10:54:07,596 INFO /usr/local/bin/bench restart
+2024-10-08 10:54:08,072 DEBUG cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe:
+2024-10-08 10:54:08,348 WARNING cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe: executed with exit code 2
+2024-10-08 10:54:08,348 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-10-08 10:54:21,335 INFO /usr/local/bin/bench restart
+2024-10-08 10:54:21,767 DEBUG cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe:
+2024-10-08 10:54:21,999 WARNING cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe: executed with exit code 2
+2024-10-08 10:54:21,999 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-10-08 10:54:25,956 INFO /usr/local/bin/bench start
+2024-10-08 10:54:26,597 INFO /usr/local/bin/bench watch
+2024-10-08 10:54:26,605 INFO /usr/local/bin/bench worker
+2024-10-08 10:54:26,611 INFO /usr/local/bin/bench serve --port 8001
+2024-10-08 10:54:26,622 INFO /usr/local/bin/bench schedule
+2024-10-08 10:54:49,670 INFO /usr/local/bin/bench restart
+2024-10-08 10:54:53,467 DEBUG cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe:
+2024-10-08 10:54:53,693 WARNING cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe: executed with exit code 2
+2024-10-08 10:54:53,693 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-10-08 10:54:56,454 INFO /usr/local/bin/bench start
+2024-10-08 10:54:56,899 INFO /usr/local/bin/bench worker
+2024-10-08 10:54:56,910 INFO /usr/local/bin/bench serve --port 8001
+2024-10-08 10:54:56,924 INFO /usr/local/bin/bench schedule
+2024-10-08 10:54:56,946 INFO /usr/local/bin/bench watch
+2024-10-08 10:56:51,119 INFO /usr/local/bin/bench restart
+2024-10-08 10:56:51,555 DEBUG cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe:
+2024-10-08 10:56:51,782 WARNING cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe: executed with exit code 2
+2024-10-08 10:56:51,782 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-10-08 10:57:04,853 INFO /usr/local/bin/bench start
+2024-10-08 10:57:05,317 INFO /usr/local/bin/bench worker
+2024-10-08 10:57:05,329 INFO /usr/local/bin/bench serve --port 8001
+2024-10-08 10:57:05,356 INFO /usr/local/bin/bench schedule
+2024-10-08 10:57:05,383 INFO /usr/local/bin/bench watch
+2024-10-08 10:58:30,528 INFO /usr/local/bin/bench restart
+2024-10-08 10:58:31,042 DEBUG cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe:
+2024-10-08 10:58:31,293 WARNING cd /home/mstfrs/Desktop/ozerpan && sudo supervisorctl restart frappe: executed with exit code 2
+2024-10-08 10:58:31,294 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-10-08 11:01:08,806 INFO /usr/local/bin/bench build
+2024-10-08 12:00:02,994 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-08 13:23:10,396 INFO /usr/local/bin/bench start
+2024-10-08 13:23:13,323 INFO /usr/local/bin/bench watch
+2024-10-08 13:23:13,323 INFO /usr/local/bin/bench serve --port 8001
+2024-10-08 13:23:13,323 INFO /usr/local/bin/bench worker
+2024-10-08 13:23:13,323 INFO /usr/local/bin/bench schedule
+2024-10-08 13:44:48,467 INFO /usr/local/bin/bench start
+2024-10-08 13:44:50,626 INFO /usr/local/bin/bench serve --port 8001
+2024-10-08 13:44:50,626 INFO /usr/local/bin/bench watch
+2024-10-08 13:44:50,626 INFO /usr/local/bin/bench schedule
+2024-10-08 13:44:50,630 INFO /usr/local/bin/bench worker
+2024-10-08 15:12:33,696 INFO /home/mstfrs/.local/bin/bench start
+2024-10-08 15:12:39,774 INFO /home/mstfrs/.local/bin/bench schedule
+2024-10-08 15:12:39,774 INFO /home/mstfrs/.local/bin/bench watch
+2024-10-08 15:12:39,774 INFO /home/mstfrs/.local/bin/bench serve --port 8001
+2024-10-08 15:12:39,775 INFO /home/mstfrs/.local/bin/bench worker
+2024-10-08 16:14:34,333 INFO /home/mstfrs/.local/bin/bench start
+2024-10-08 16:14:37,069 INFO /home/mstfrs/.local/bin/bench watch
+2024-10-08 16:14:37,069 INFO /home/mstfrs/.local/bin/bench schedule
+2024-10-08 16:14:37,069 INFO /home/mstfrs/.local/bin/bench serve --port 8001
+2024-10-08 16:14:37,069 INFO /home/mstfrs/.local/bin/bench worker
+2024-10-08 18:00:01,996 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-08 20:44:12,544 INFO /home/mstfrs/.local/bin/bench start
+2024-10-08 20:44:15,783 INFO /home/mstfrs/.local/bin/bench schedule
+2024-10-08 20:44:15,783 INFO /home/mstfrs/.local/bin/bench watch
+2024-10-08 20:44:15,783 INFO /home/mstfrs/.local/bin/bench serve --port 8001
+2024-10-08 20:44:15,783 INFO /home/mstfrs/.local/bin/bench worker
+2024-10-09 00:00:14,528 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-09 00:08:37,165 INFO /home/mstfrs/.local/bin/bench start
+2024-10-09 00:08:39,622 INFO /home/mstfrs/.local/bin/bench watch
+2024-10-09 00:08:39,622 INFO /home/mstfrs/.local/bin/bench worker
+2024-10-09 00:08:39,622 INFO /home/mstfrs/.local/bin/bench schedule
+2024-10-09 00:08:39,622 INFO /home/mstfrs/.local/bin/bench serve --port 8001
+2024-10-09 06:00:03,775 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-09 07:21:14,696 INFO /home/mstfrs/.local/bin/bench build
+2024-10-09 09:47:51,317 INFO /home/mstfrs/.local/bin/bench start
+2024-10-09 09:48:01,880 INFO /home/mstfrs/.local/bin/bench serve --port 8001
+2024-10-09 09:48:01,880 INFO /home/mstfrs/.local/bin/bench schedule
+2024-10-09 09:48:01,880 INFO /home/mstfrs/.local/bin/bench watch
+2024-10-09 09:48:01,881 INFO /home/mstfrs/.local/bin/bench worker
+2024-10-09 12:00:04,621 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-09 18:00:05,243 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-09 21:06:39,262 INFO /home/mstfrs/.local/bin/bench start
+2024-10-09 21:06:44,562 INFO /home/mstfrs/.local/bin/bench serve --port 8001
+2024-10-09 21:06:44,563 INFO /home/mstfrs/.local/bin/bench watch
+2024-10-09 21:06:44,564 INFO /home/mstfrs/.local/bin/bench schedule
+2024-10-09 21:06:44,565 INFO /home/mstfrs/.local/bin/bench worker
+2024-10-10 00:00:07,061 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-10 06:00:02,248 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-10 10:15:02,485 INFO /home/mstfrs/.local/bin/bench start
+2024-10-10 10:15:04,214 INFO /home/mstfrs/.local/bin/bench schedule
+2024-10-10 10:15:04,229 INFO /home/mstfrs/.local/bin/bench worker
+2024-10-10 10:15:04,241 INFO /home/mstfrs/.local/bin/bench serve --port 8001
+2024-10-10 10:15:04,293 INFO /home/mstfrs/.local/bin/bench watch
